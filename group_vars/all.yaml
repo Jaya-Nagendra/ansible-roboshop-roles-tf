@@ -1,0 +1,12 @@
+
+ansible_user: ec2-user
+ansible_password: DevOps321
+MONGODB_HOST: mongodb-dev.ljnag.space
+REDIS_HOST: redis-dev.ljnag.space
+USER_HOST: user-dev.ljnag.space
+CART_HOST: cart-dev.ljnag.space
+CATALOGUE_HOST: catalogue-dev.ljnag.space
+MYSQL_HOST: mysql-dev.ljnag.space
+SHIPPING_HOST: shipping-dev.ljnag.space
+RABBITMQ_HOST: rabbitmq-dev.ljnag.space
+PAYMENT_HOST: payment-dev.ljnag.space
