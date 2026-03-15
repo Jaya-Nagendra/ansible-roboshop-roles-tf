@@ -3,6 +3,14 @@
     name: mysql-server
     state: present
 
+- name: install python dependencies to connect with aws
+  ansible.builtin.pip:
+    name: "{{ item }}"
+    state: present
+  loop:
+  - botocore
+  - boto3     
+
 - name: Start and enable mysqld
   ansible.builtin.service:
     name: mysqld
