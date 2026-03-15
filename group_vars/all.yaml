@@ -10,3 +10,4 @@ MYSQL_HOST: mysql-dev.ljnag.space
 SHIPPING_HOST: shipping-dev.ljnag.space
 RABBITMQ_HOST: rabbitmq-dev.ljnag.space
 PAYMENT_HOST: payment-dev.ljnag.space
+env: dev
