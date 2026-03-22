@@ -3,10 +3,12 @@ ansible_user: ec2-user
 ansible_password: DevOps321
 MONGODB_HOST: mongodb-{{ env }}.ljnag.space
 REDIS_HOST: redis-{{ env }}.ljnag.space
-USER_HOST: user-{{ env }}.ljnag.space
-CART_HOST: cart-{{ env }}.ljnag.space
-CATALOGUE_HOST: catalogue-{{ env }}.ljnag.space
 MYSQL_HOST: mysql-{{ env }}.ljnag.space
-SHIPPING_HOST: shipping-{{ env }}.ljnag.space
 RABBITMQ_HOST: rabbitmq-{{ env }}.ljnag.space
-PAYMENT_HOST: payment-{{ env }}.ljnag.space
+
+USER_HOST: user.backend-alb-{{ env }}.ljnag.space
+CART_HOST: cart.backend-alb-{{ env }}.ljnag.space
+CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.ljnag.space
+SHIPPING_HOST: shipping.backend-alb-{{ env }}.ljnag.space
+PAYMENT_HOST: payment.backend-alb-{{ env }}.ljnag.space
+app_version: v3
