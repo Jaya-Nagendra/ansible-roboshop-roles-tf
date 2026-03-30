@@ -17,7 +17,8 @@
   ansible.builtin.replace:
     path: /app/payment.ini
     regexp: 'socket\s*=\s*0\.0\.0\.0:8080\s*\nprotocol\s*=\s*http'
-    replace: 'http = 0.0.0.0:8080'    
+    replace: 'http = 0.0.0.0:8080'
+  notify: restart payment      
 
 - name: restart payment
   ansible.builtin.service:
